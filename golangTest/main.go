@@ -1,9 +1,8 @@
 package main
 
 import (
-	"fmt"
-	"net/http"
-
+    "fmt"
+    "net/http"
     "log"
 )
 
@@ -20,8 +19,8 @@ func main() {
     log.Println("Server listening on "+ Port)
 
     err := http.ListenAndServe(":"+Port, nil)
-	if err != nil {
-		log.Println("Error starting server:", err)
-	}
+    if err != nil {
+        log.Println("Error starting server:", err)
+    }
 
 }
